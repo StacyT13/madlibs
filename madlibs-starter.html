@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        #wrapper {
+            background-color: bisque;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="wrapper">
+            <h2>Madlibs</h2>
+            <img src="https://www.madlibs.com/wp-content/themes/madlibs/dist/images/intro_logo.png" width="20%" height="auto">
+            <p>Let's bake a cake! Please enter the following information:</p>
+            <span id="inputs">
+<input id="noun" placeholder="cooking vessel" type="text" ><br>
+<input id="noun1" placeholder="a food" type="text"><br>
+<input id="noun2" placeholder="a food" type="text"><br>
+<input id="liquid" placeholder="liquid" type="text"><br>
+<input id="verb" placeholder="place" type="text"><br>
+</span>
+            <br>
+            <button type="button" onclick="createMessage()">Submit</button>
+            <br>
+            <br>
+            <img src="https://cdn.pixabay.com/photo/2021/06/25/18/14/cake-6364361_1280.png" width="20%" height="auto">
+            <br>
+            <div id="result" style="display:none">
+                Baking a cake is a fun thing to do! <br>
+                <ol>
+                    <li>
+                        Start by pre-heating your oven to 350 degrees.
+                    </li>
+                    <br>
+                    <li>
+                        Then grab a big <span id="word1"> </span> and baking dish.
+                    </li>
+                    <br>
+                    <li>
+                        Next, gather flour, <span id="word2"> </span>, and <span id="word3"> </span> and mix them together.
+                    </li>
+                    <br>
+                    <li>
+                        Next mix eggs, vanilla, and <span id="word4"> </span> with your dry ingredients and add it to your greased pan.
+                    </li>
+                    <br>
+                    <li>
+                       Now pop your pan in the <span id="word5"> </span> and bake at 350 degrees for 45 mins or until it's done.
+                </ol>
+                <br>
+                <button type="button" onclick="goAgain()">Go Again</button>
+            </div>
+
+    </main>
+    <script src="madlibs.js"></script>
+</body>
+
+</html>
